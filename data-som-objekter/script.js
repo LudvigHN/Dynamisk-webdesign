@@ -8,13 +8,13 @@
 const person = {
     name: "John John",
     age: 98,
-    city:"Roskilde",
-    job:"farmer",
-    male:true,
-    pet:{
-        type:"cat",
-        name:"Jeff",
-        age:12,
+    city: "Roskilde",
+    job: "farmer",
+    male: true,
+    pet: {
+        type: "cat",
+        name: "Jeff",
+        age: 12,
     },
-    hobbies:["football","cycling","swimming"],
+    hobbies: ["football", "cycling", "swimming"],
 }
