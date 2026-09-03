@@ -24,3 +24,11 @@ const students = [
     {name:"Lukas",age:20,course:"Mediegrafiker"},
     {name:"Emil",age:28,course:"Teknisk Designer"},
 ]
+
+const insertDOM = document.getElementById("insert")
+
+students.forEach(function(student){
+    const divElement = document.createElement("div")
+    divElement.textContent= "navn: " + student.name + ", Alder: " + student.age + ", uddannelse: " + student.course
+    insertDOM.append(divElement)
+})
