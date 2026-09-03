@@ -18,3 +18,9 @@ const person = {
     },
     hobbies: ["football", "cycling", "swimming"],
 }
+
+const students = [
+    {name:"Sofie",age:25,course:"Webudvikler"},
+    {name:"Lukas",age:20,course:"Mediegrafiker"},
+    {name:"Emil",age:28,course:"Teknisk Designer"},
+]
