@@ -28,7 +28,8 @@ const students = [
 const insertDOM = document.getElementById("insert")
 
 students.forEach(function(student){
+    const message = `name: ${student.name}, Alder: ${student.age}, Uddannelse: ${student.course}`
     const divElement = document.createElement("div")
-    divElement.textContent= "navn: " + student.name + ", Alder: " + student.age + ", uddannelse: " + student.course
+    divElement.textContent= message
     insertDOM.append(divElement)
 })
