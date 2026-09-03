@@ -32,4 +32,3 @@ students.forEach(function(student){
     divElement.textContent= "navn: " + student.name + ", Alder: " + student.age + ", uddannelse: " + student.course
     insertDOM.append(divElement)
 })
-test
