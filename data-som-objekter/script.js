@@ -27,10 +27,22 @@ const students = [
 
 const insertDOM = document.getElementById("insert")
 
-students.forEach(function (student) {
-    const message = `name: ${student.name}, Alder: ${student.age}, Uddannelse: ${student.course}`
-    divElement.classList.add("student")
+// students.forEach(function (student) {
+//     const message = `name: ${student.name}, Alder: ${student.age}, Uddannelse: ${student.course}`
+//     const divElement = document.createElement("div")
+//     divElement.classList.add("student")
+//     
+//     divElement.textContent = message
+//     insertDOM.append(divElement)
+// })
+
+students.forEach(function(student){
+    const studentHead = document.createElement("h2")
+    const studentInfo = document.createElement("p")
     const divElement = document.createElement("div")
-    divElement.textContent = message
+    divElement.classList.add("student")
+    studentHead.textContent = `${student.name}`
+    studentInfo.textContent = `Alder: ${student.age} Uddannelse: ${student.course}`
+    divElement.append(studentHead,studentInfo)
     insertDOM.append(divElement)
 })
